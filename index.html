@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyHealth | Book Doctors & Donate Organs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Optional: Customizing Tailwind colors for better branding */
+      .color-teal-600 {
+        background-color: #0d9488;
+      }
+      .color-green-600 {
+        background-color: #10b981;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+      <nav
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16"
+      >
+        <h1 class="text-3xl font-extrabold text-teal-600 tracking-wider">
+          EasyHealth
+        </h1>
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="index.html"
+            class="text-teal-600 border-b-2 border-teal-600 font-medium"
+            >Home</a
+          >
+          <a
+            href="booking.html"
+            class="text-gray-600 hover:text-teal-600 transition"
+            >Book Doctor</a
+          >
+          <a
+            href="donation.html"
+            class="text-gray-600 hover:text-green-600 transition"
+            >Organ Donor</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition"
+            >Log In</a
+          >
+        </div>
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-500 hover:text-teal-600 p-2 rounded-md"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto my-16 px-4 sm:px-6 lg:px-8">
+      <section class="text-center mb-16">
+        <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+          Your Health, Simplified.
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Seamlessly book doctor appointments and register as a life-saving
+          organ donor in one easy platform.
+        </p>
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-10">
+        <div
+          class="bg-white p-8 rounded-2xl shadow-xl border-t-8 border-teal-500 transform hover:scale-[1.02] transition duration-500"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 rounded-full bg-teal-100">
+              <svg
+                class="w-8 h-8 text-teal-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M17 16h.01"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold text-gray-800">Book Doctor</h3>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Find top specialists, view genuine reviews, check real-time slots,
+            and manage all your appointments in one place.
+          </p>
+          <div class="flex space-x-2 mb-6">
+            <input
+              type="text"
+              placeholder="Specialty, Doctor or Location..."
+              class="flex-grow p-3 border border-gray-300 rounded-l-lg focus:ring-teal-500 focus:border-teal-500"
+            />
+            <a
+              href="booking.html"
+              class="p-3 bg-teal-600 text-white rounded-r-lg hover:bg-teal-700 transition"
+              >Search</a
+            >
+          </div>
+          <a
+            href="booking.html"
+            class="block w-full text-center py-3 bg-teal-600 text-white font-medium rounded-xl hover:bg-teal-700 transition duration-300 shadow-lg"
+            >Start Booking &rarr;</a
+          >
+        </div>
+
+        <div
+          class="bg-white p-8 rounded-2xl shadow-xl border-t-8 border-green-500 transform hover:scale-[1.02] transition duration-500"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <div class="p-3 rounded-full bg-green-100">
+              <svg
+                class="w-8 h-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold text-gray-800">Donate Life</h3>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Make a life-saving choice. Easily register as an organ donor and
+            manage your consent preferences digitally.
+          </p>
+          <div class="bg-green-50 p-4 rounded-lg flex items-center mb-8">
+            <svg
+              class="w-6 h-6 text-green-600 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="text-green-800 font-semibold"
+              >1 Donor Can Save Up to 8 Lives.</span
+            >
+          </div>
+          <a
+            href="donation.html"
+            class="block w-full text-center py-3 bg-green-600 text-white font-medium rounded-xl hover:bg-green-700 transition duration-300 shadow-lg"
+            >Become a Donor &rarr;</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-8 mt-20">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-sm">
+          &copy; 2025 EasyHealth. All rights reserved. |
+          <a href="#" class="text-teal-400 hover:text-teal-300"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
